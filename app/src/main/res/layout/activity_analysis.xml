@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#a9a9a9"
     tools:layout_editor_absoluteX="6dp"
     tools:layout_editor_absoluteY="-6dp">
 
@@ -22,23 +21,25 @@
         android:id="@+id/tvMaxReading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvMinReading"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvMax"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.039" />
 
     <TextView
         android:id="@+id/tvMinReading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tvMaxReading"
         app:layout_constraintTop_toBottomOf="@+id/tvMin"
-        app:layout_constraintVertical_bias="0.07" />
+        app:layout_constraintVertical_bias="0.039" />
 
     <TextView
         android:id="@+id/tvMax"

@@ -9,7 +9,7 @@
     tools:context=".LoginActivity">
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/etFirstName"
         android:layout_width="390dp"
         android:layout_height="72dp"
         android:layout_marginLeft="4pt"

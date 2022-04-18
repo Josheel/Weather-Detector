@@ -3,11 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/joshe/Desktop/dev/WeatherDetector/app/src/main/res/layout/activity_analysis.xml" value="0.132" />
+        <entry key="..\:/Users/joshe/Desktop/dev/WeatherDetector/app/src/main/res/layout/activity_analysis.xml" value="0.33" />
         <entry key="..\:/Users/joshe/Desktop/dev/WeatherDetector/app/src/main/res/layout/activity_dashboard.xml" value="0.2" />
         <entry key="..\:/Users/joshe/Desktop/dev/WeatherDetector/app/src/main/res/layout/activity_login.xml" value="0.1" />
         <entry key="..\:/Users/joshe/Desktop/dev/WeatherDetector/app/src/main/res/layout/activity_main.xml" value="0.245018115942029" />
         <entry key="..\:/Users/joshe/Desktop/dev/WeatherDetector/app/src/main/res/layout/activity_register.xml" value="0.245018115942029" />
+        <entry key="..\:/Users/joshe/Desktop/dev/WeatherDetector/app/src/main/res/menu/analysis.xml" value="0.12037037037037036" />
+        <entry key="..\:/Users/joshe/Desktop/dev/WeatherDetector/app/src/main/res/menu/dashboard.xml" value="0.1" />
       </map>
     </option>
   </component>

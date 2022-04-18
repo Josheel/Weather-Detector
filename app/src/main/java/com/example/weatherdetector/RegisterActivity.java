@@ -1,6 +1,7 @@
 
 package com.example.weatherdetector;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
@@ -20,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterActivity extends AppCompatActivity {
     Button register_button;
-    EditText email, password;
+    EditText email, password, firstName;
     //Declaring an instance of firebase
     FirebaseAuth auth;
     FirebaseDatabase database;
@@ -31,7 +32,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        email = findViewById(R.id.email);
+        email = findViewById(R.id.email2);
+        firstName = findViewById(R.id.etFirstName);
         password = findViewById(R.id.password);
         register_button = findViewById(R.id.register_button);
         database = FirebaseDatabase.getInstance();
@@ -79,17 +81,24 @@ public class RegisterActivity extends AppCompatActivity {
                             reference = database.getReference("Users").child(auth.getCurrentUser().getUid()).child("Email");
                             reference.setValue(auth.getCurrentUser().getEmail());
 
-                            Toast.makeText(RegisterActivity.this,auth.getCurrentUser().getUid(), Toast.LENGTH_SHORT).show();
+                            reference = database.getReference("Users").child(auth.getCurrentUser().getUid()).child("firstName");
+                            reference.setValue(firstName.getText().toString());
+
+                            Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
+                            startActivity(intent);
+                            Toast.makeText(RegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                            finish();
                         }
                         else
                         {
-                            Toast.makeText(RegisterActivity.this,"You are not Registered! Try again",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(RegisterActivity.this,"Registration failed",Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
 
             }
         });
+
 
     }
 }
